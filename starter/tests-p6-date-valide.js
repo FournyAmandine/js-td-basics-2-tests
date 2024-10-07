@@ -38,12 +38,12 @@ let maxDays;
 
 if (month === "Janvier" || month === "Mars" ||month === "Mai" ||month === "Juillet" ||month === "Août" || month === "Octobre" || month === "Décembre") {
     maxDays = 31;
-} else if (month==="Février" && year%4 !==0){
-    maxDays = 28
-} else if (month==="Février" && year%4 === 0 && year%100 !==0 || year%400 ===0){
-    maxDays = 29
 } else if (month==="Avril" || month==="Juin" || month==="Septembre" || month==="Novembre"){
     maxDays = 30;
+} else if (month==="Février" && year%4 === 0 && year%100 !==0 || year%400 ===0){
+    maxDays = 29;
+} else if (month==="Février" && year%4 !==0){
+    maxDays = 28;
 }
 
 if (day <= maxDays){
