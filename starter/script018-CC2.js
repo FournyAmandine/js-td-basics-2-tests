@@ -36,3 +36,24 @@ BONNE CHANCE 😀
 //    INDICE : vous allez avoir besoin de l'opérateur && pour prendre la décision.
 // 5. Changez là aussi les scores pour générer différents gagnants,
 //    en gardant toujours en tête qu'il pourrait y avoir des ex æquos.
+
+
+const scoreJohn = ((89+120+103)/3)
+const scoreMike = ((116+94+123)/3)
+const scoreMary = ((97+134+105)/3)
+
+if(scoreJohn > scoreMike && scoreJohn > scoreMary){
+    console.log(`L'équipe de John est gagnante avec ${scoreJohn} de moyenne`)
+} else {
+    if(scoreMike > scoreJohn && scoreMike > scoreMary){
+        console.log(`L'équipe de Mike est gagnante avec ${scoreMike} de moyenne`)
+    } else {
+        if(scoreMary > scoreMike && scoreMary > scoreJohn){
+            console.log(`L'équipe de Mary est gagnante avec ${scoreMary} de moyenne`)
+        } else {
+            console.log("Les deux équipes sont ex æquo")
+        }
+    }
+}
+
+

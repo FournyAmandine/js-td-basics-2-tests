@@ -58,3 +58,117 @@
 // Voici un canevas de code qui permettrait de gérer les déplacements grâce aux touches
 
 
+const age = 24;
+
+/*age > 18 ? "John boit des bières" : "John boit des jus"*/
+/*String  = age > 18 ? "John boit des bières" : "John boit des jus"*/
+
+console.log(age >18 ? "John boit des bières" : "John boit des jus");
+
+const drink = age > 18 ? "Bières" : "Jus";
+console.log(`John boit des ${drink}`);
+
+if(age>18){
+    console.log("John boit des bières");
+} else {
+    console.log("John boit des jus");
+}
+
+const job = "professeur";
+
+switch(job){
+    case "instituteur":
+    case "professeur":
+        console.log("John enseigne la programmation aux enfants");
+        break;
+    case "chauffeur":
+        console.log("John conduit un taxi à Lisbonne");
+        break;
+    case "designer":
+        console.log("John conçoit de beaux sites web");
+        break;
+        default:
+            console.log("John fait autre chose");
+}
+
+const age2 = 14;
+
+switch(age2){
+    case 1:
+    case 2:
+    case 3:
+    case 4:
+    case 5:
+    case 6:
+    case 7:
+    case 8:
+    case 9:
+    case 10:
+    case 11:
+    case 12:
+        console.log("John est un garçon");
+        break;
+    case 13:
+    case 14:
+    case 15:
+    case 16:
+    case 17:
+    case 18:
+    case 19:
+    case 20:
+        console.log("John est un adolescent");
+        break;
+    case 21:
+    case 22:
+    case 23:
+    case 24:
+    case 25:
+    case 26:
+    case 27:
+    case 28:
+    case 29:
+    case 30:
+        console.log("John est un jeune homme");
+        break;
+        default:
+            console.log("John est un homme");
+}
+
+const meteo = prompt("Quel temps fait-il dehors");
+
+switch(meteo){
+    case "soleil":
+        console.log("Sortez en t-shirt.");
+        break;
+    case "vent":
+        console.log("Sortez en pull.");
+        break;
+    case "pluie":
+        console.log("Sortez en blouson.")
+        break
+    case "neige":
+        console.log("Restez au chaud à la maison.");
+        break;
+        default:
+            console.log("Je n'ai pas compris");
+}
+
+
+const day = prompt("Quel est le numéro du jour");
+
+switch(day){
+    case "7":
+        console.log("Les jours suivants se sont déjà écoulés depuis le début de la semaine : 6");
+    case "6":
+        console.log("Les jours suivants se sont déjà écoulés depuis le début de la semaine : 5");
+    case "5":
+         console.log("Les jours suivants se sont déjà écoulés depuis le début de la semaine : 4");
+    case "4":
+        console.log("Les jours suivants se sont déjà écoulés depuis le début de la semaine : 3");
+    case "3":
+        console.log("Les jours suivants se sont déjà écoulés depuis le début de la semaine : 2")
+    case "2":
+        console.log("Les jours suivants se sont déjà écoulés depuis le début de la semaine : 1");
+    case "1":
+        console.log("Les jours suivants se sont déjà écoulés depuis le début de la semaine : 0");
+}

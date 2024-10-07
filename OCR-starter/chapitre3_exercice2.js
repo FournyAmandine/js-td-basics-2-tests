@@ -11,3 +11,17 @@
 // Exemple : si la moyenne du candidat est de 11, le programme devrait afficher "Le candidat est reçu."
 
 // N'oubliez pas de tester votre programme avec différentes moyennes pour couvrir tous les cas de figure.
+
+const moyC1 = 8
+
+if (moyC1 < 10) {
+    console.log("Le candidat est recalé")
+} else {
+    if (moyC1 >= 10 && moyC1 < 12) {
+        console.log("Le candidat est reçu")
+    } else {
+        if (moyC1 >= 12) {
+            console.log("Le candidat est reçu avec mention")
+        }
+    }
+}
